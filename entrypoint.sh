@@ -9,5 +9,3 @@ chmod 600 $GITHUB_WORKSPACE/.ssh/id_rsa_deployer
 echo "IdentityFile $GITHUB_WORKSPACE/.ssh/id_rsa_deployer\n" >> $GITHUB_WORKSPACE/.ssh/config
 
 dep $1 $2
-
-bash
