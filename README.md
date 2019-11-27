@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Deploying
-        uses: Metrakit/deployer-action@master
+        uses: HEVAWEB/deployer-action@master
         with:
           task: 'deploy'
           env: 'production'
