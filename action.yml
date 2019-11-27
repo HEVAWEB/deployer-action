@@ -1,0 +1,17 @@
+name: 'Deployer'
+description: 'Deploy your app with Deployer'
+inputs:
+  task:
+    description: 'Deployer task'
+    required: true
+    default: 'deploy'
+  env:
+    description: 'Deployer env'
+    required: true
+    default: 'prod'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.task }}
+    - ${{ inputs.env }}
